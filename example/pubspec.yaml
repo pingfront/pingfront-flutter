@@ -1,0 +1,24 @@
+name: pingfront_flutter_example
+description: "Clockwise, a small app that integrates the pingfront Flutter plugin the way a customer would."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pingfront_flutter:
+    path: ../pingfront_flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  # The plugin brings the native iOS SDK as a Swift package.
+  config:
+    enable-swift-package-manager: true

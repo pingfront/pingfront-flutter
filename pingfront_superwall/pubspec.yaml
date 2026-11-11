@@ -1,0 +1,36 @@
+name: pingfront_superwall
+description: "The Superwall adapter for pingfront_flutter: Superwall paywalls as offer cards, and Superwall's entitlement as the person's, through the native pingfront adapters."
+version: 1.0.0
+homepage: https://pingfront.sh
+repository: https://github.com/pingfront/pingfront-flutter/tree/main/pingfront_superwall
+issue_tracker: https://github.com/pingfront/pingfront-flutter/issues
+documentation: https://pingfront.sh/docs/flutter
+topics:
+  - superwall
+  - paywall
+  - subscriptions
+  - in-app-purchase
+  - chat
+
+environment:
+  sdk: ^3.13.4
+  flutter: '>=3.47.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pingfront_flutter: ^1.0.0
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: dev.pingfront.flutter.superwall
+        pluginClass: PingFrontSuperwallPlugin
+      ios:
+        pluginClass: PingFrontSuperwallPlugin

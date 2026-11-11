@@ -1,0 +1,36 @@
+name: pingfront_adapty
+description: "The Adapty adapter for pingfront_flutter: Adapty paywalls as offer cards, and Adapty's entitlement as the person's, through the native pingfront adapters."
+version: 1.0.0
+homepage: https://pingfront.sh
+repository: https://github.com/pingfront/pingfront-flutter/tree/main/pingfront_adapty
+issue_tracker: https://github.com/pingfront/pingfront-flutter/issues
+documentation: https://pingfront.sh/docs/flutter
+topics:
+  - adapty
+  - paywall
+  - subscriptions
+  - in-app-purchase
+  - chat
+
+environment:
+  sdk: ^3.13.4
+  flutter: '>=3.47.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pingfront_flutter: ^1.0.0
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: dev.pingfront.flutter.adapty
+        pluginClass: PingFrontAdaptyPlugin
+      ios:
+        pluginClass: PingFrontAdaptyPlugin

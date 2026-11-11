@@ -1,0 +1,39 @@
+name: pingfront_flutter
+description: "In-app support chat and proactive messages for Flutter apps: the native pingfront iOS and Android SDKs, with their native chat, behind one Dart API."
+version: 1.0.0
+homepage: https://pingfront.sh
+repository: https://github.com/pingfront/pingfront-flutter/tree/main/pingfront_flutter
+issue_tracker: https://github.com/pingfront/pingfront-flutter/issues
+documentation: https://pingfront.sh/docs/flutter
+topics:
+  - chat
+  - customer-support
+  - in-app-messaging
+  - messaging
+  - support
+
+environment:
+  sdk: ^3.13.4
+  flutter: '>=3.47.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # The Pigeon-generated code (lib/src/messages.g.dart) imports it.
+  meta: ^1.15.0
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.4
+  pigeon: ^29.1.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: dev.pingfront.flutter
+        pluginClass: PingFrontFlutterPlugin
+      ios:
+        pluginClass: PingFrontFlutterPlugin
